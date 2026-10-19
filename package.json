@@ -1,0 +1,12 @@
+{
+  "name": "frontend-challenges",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:01": "npm run dev --workspace=challenge-1-hotel-booking",
+    "dev:02": "npm run dev --workspace=challenge-02",
+    "build": "npm run build --workspaces --if-present"
+  }
+}

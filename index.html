@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Challenges</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card-bg: rgba(30, 41, 59, 0.7);
+        --border: rgba(148, 163, 184, 0.15);
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-hover: #0ea5e9;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1.5rem;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p.subtitle {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 900px;
+      }
+      .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(56, 189, 248, 0.5);
+        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.6), 0 0 15px rgba(56, 189, 248, 0.15);
+      }
+      .card.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        padding: 0.25rem 0.6rem;
+        border-radius: 9999px;
+        margin-bottom: 1rem;
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--accent);
+        width: fit-content;
+      }
+      .badge.upcoming {
+        background: rgba(148, 163, 184, 0.15);
+        color: var(--muted);
+      }
+      .card h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text);
+      }
+      .card p {
+        font-size: 0.875rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .card-link {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--accent);
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Frontend Challenges</h1>
+      <p class="subtitle">A showcase of interactive frontend projects and mentor solutions.</p>
+    </header>
+
+    <div class="grid">
+      <a href="./challenge-1-hotel-booking/" class="card">
+        <div>
+          <span class="badge">Challenge 01</span>
+          <h2>Hotel Booking Confirmation</h2>
+          <p>Maison Soleil hotel booking confirmation dashboard with receipt details, host note, and guest stay information.</p>
+        </div>
+        <div class="card-link">View Solution →</div>
+      </a>
+
+      <div class="card disabled">
+        <div>
+          <span class="badge upcoming">Challenge 02 · Soon</span>
+          <h2>Pricing Page</h2>
+          <p>Upcoming interactive pricing comparison with tier toggling.</p>
+        </div>
+        <div class="card-link">Coming Soon</div>
+      </div>
+
+      <div class="card disabled">
+        <div>
+          <span class="badge upcoming">Challenge 03 · Soon</span>
+          <h2>Dashboard</h2>
+          <p>Upcoming analytics and operations overview challenge.</p>
+        </div>
+        <div class="card-link">Coming Soon</div>
+      </div>
+    </div>
+  </body>
+</html>
