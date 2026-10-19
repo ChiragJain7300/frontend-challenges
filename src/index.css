@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-Primary: "Commissioner", sans-serif;
+
+  --color-Green-400: hsl(176, 50%, 47%);
+  --color-Green-700: hsl(176, 72%, 28%);
+
+  --color-Black: hsl(0, 0%, 0%);
+  --color-Gray-500: hsl(0, 0%, 48%);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.boxCont {
+  @apply z-20 w-full rounded-md bg-white p-5 md:p-10 shadow-xl relative mb-8;
+}
+.vr {
+  @apply md:border-r border-b md:border-b-0 border-Gray-500;
+}
+.heading-1 {
+  @apply text-4xl font-bold text-Black mb-4;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+}
