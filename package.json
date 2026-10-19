@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev:01": "npm run dev --workspace=challenge-1-hotel-booking",
-    "dev:02": "npm run dev --workspace=challenge-02",
+    "dev:02": "npm run dev --workspace=challenge-2-crowdfunding-product-page",
     "build": "npm run build --workspaces --if-present"
   }
 }
