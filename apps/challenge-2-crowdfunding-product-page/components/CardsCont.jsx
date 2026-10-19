@@ -11,7 +11,7 @@ const CardsCont = () => {
       {/* Box - 1 */}
       <div className="boxCont text-center">
         <img
-          src="/images/logo-mastercraft.svg"
+          src="./images/logo-mastercraft.svg"
           alt="logo-mastercraft.svg"
           className="w-12 absolute transform -top-0.5 -translate-y-1/2 left-1/2 -translate-x-1/2"
         />

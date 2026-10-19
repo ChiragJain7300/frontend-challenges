@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="max-w-7xl mx-auto p-5 flex items-center gap-8">
       <div>
-        <img src="/images/logo.svg" alt="logo.svg" className="w-24" />
+        <img src="./images/logo.svg" alt="logo.svg" className="w-24" />
       </div>
       <div className="flex-1 hidden md:block">
         <ul className="flex gap-10 text-sm text-medium-gray font-bold items-center">
@@ -20,8 +20,8 @@ const Header = () => {
             <img
               src={
                 featureDropMenu
-                  ? "/images/icon-arrow-up.svg"
-                  : "/images/icon-arrow-down.svg"
+                  ? "./images/icon-arrow-up.svg"
+                  : "./images/icon-arrow-down.svg"
               }
               alt="icon-arrow-down.svg"
             />
@@ -33,26 +33,26 @@ const Header = () => {
               >
                 <ul className="flex flex-col gap-3">
                   <li className="ms-2 flex gap-3 items-center">
-                    <img src="/images/icon-todo.svg" alt="icon-todo.svg" />
+                    <img src="./images/icon-todo.svg" alt="icon-todo.svg" />
                     To Do List
                   </li>
                   <li className="ms-2 flex gap-3 items-center">
                     <img
-                      src="/images/icon-calendar.svg"
+                      src="./images/icon-calendar.svg"
                       alt="icon-calendar.svg"
                     />
                     Calendar
                   </li>
                   <li className="ms-2 flex gap-3 items-center">
                     <img
-                      src="/images/icon-reminders.svg"
+                      src="./images/icon-reminders.svg"
                       alt="icon-reminders.svg"
                     />
                     Reminder
                   </li>
                   <li className="ms-2 flex gap-3 items-center">
                     <img
-                      src="/images/icon-planning.svg"
+                      src="./images/icon-planning.svg"
                       alt="icon-planning.svg"
                     />
                     Planning
@@ -71,8 +71,8 @@ const Header = () => {
             <img
               src={
                 companyDropMenu
-                  ? "/images/icon-arrow-up.svg"
-                  : "/images/icon-arrow-down.svg"
+                  ? "./images/icon-arrow-up.svg"
+                  : "./images/icon-arrow-down.svg"
               }
               alt="icon-arrow-down.svg"
             />
@@ -105,7 +105,7 @@ const Header = () => {
         className="block md:hidden ms-auto cursor-pointer"
         onClick={() => setOpenModal(true)}
       >
-        <img src="/images/icon-menu.svg" alt="icon-menu.svg" />
+        <img src="./images/icon-menu.svg" alt="icon-menu.svg" />
       </button>
       {openModal && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50  backdrop-blur-md flex items-center justify-end z-10">
@@ -115,7 +115,7 @@ const Header = () => {
                 className="cursor-pointer"
                 onClick={() => setOpenModal(false)}
               >
-                <img src="/images/icon-close-menu.svg" alt="icon-close.svg" />
+                <img src="./images/icon-close-menu.svg" alt="icon-close.svg" />
               </button>
             </div>
             <ul className="flex flex-col gap-5 text-lg text-medium-gray font-bold mb-5">
@@ -128,8 +128,8 @@ const Header = () => {
                   <img
                     src={
                       featureDropMenu
-                        ? "/images/icon-arrow-up.svg"
-                        : "/images/icon-arrow-down.svg"
+                        ? "./images/icon-arrow-up.svg"
+                        : "./images/icon-arrow-down.svg"
                     }
                     alt="icon-arrow-down.svg"
                   />
@@ -143,26 +143,26 @@ const Header = () => {
                   >
                     <ul className="flex flex-col gap-3">
                       <li className="ms-2 flex gap-3 items-center">
-                        <img src="/images/icon-todo.svg" alt="icon-todo.svg" />
+                        <img src="./images/icon-todo.svg" alt="icon-todo.svg" />
                         To Do List
                       </li>
                       <li className="ms-2 flex gap-3 items-center">
                         <img
-                          src="/images/icon-calendar.svg"
+                          src="./images/icon-calendar.svg"
                           alt="icon-calendar.svg"
                         />
                         Calendar
                       </li>
                       <li className="ms-2 flex gap-3 items-center">
                         <img
-                          src="/images/icon-reminders.svg"
+                          src="./images/icon-reminders.svg"
                           alt="icon-reminders.svg"
                         />
                         Reminder
                       </li>
                       <li className="ms-2 flex gap-3 items-center">
                         <img
-                          src="/images/icon-planning.svg"
+                          src="./images/icon-planning.svg"
                           alt="icon-planning.svg"
                         />
                         Planning
@@ -180,8 +180,8 @@ const Header = () => {
                   <img
                     src={
                       companyDropMenu
-                        ? "/images/icon-arrow-up.svg"
-                        : "/images/icon-arrow-down.svg"
+                        ? "./images/icon-arrow-up.svg"
+                        : "./images/icon-arrow-down.svg"
                     }
                     alt="icon-arrow-down.svg"
                   />

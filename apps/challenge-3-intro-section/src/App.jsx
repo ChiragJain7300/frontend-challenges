@@ -24,22 +24,22 @@ function App() {
 
             <div className="p-5 w-full flex justify-evenly md:justify-start items-center gap-3 lg:gap-5 mt-5">
               <img
-                src="/images/client-databiz.svg"
+                src="./images/client-databiz.svg"
                 alt="client-databiz.svg"
                 className="w-14 md:w-16 lg:w-20"
               />
               <img
-                src="/images/client-audiophile.svg"
+                src="./images/client-audiophile.svg"
                 alt="client-audiophile.svg"
                 className="w-14 md:w-16 lg:w-20"
               />
               <img
-                src="/images/client-meet.svg"
+                src="./images/client-meet.svg"
                 alt="client-meet.svg"
                 className="w-14 md:w-16 lg:w-20"
               />
               <img
-                src="/images/client-maker.svg"
+                src="./images/client-maker.svg"
                 alt="client-maker.svg"
                 className="w-14 md:w-16 lg:w-20"
               />
@@ -47,12 +47,12 @@ function App() {
           </div>
           <div className="w-full md:w-1/2">
             <img
-              src="/images/image-hero-desktop.png"
+              src="./images/image-hero-desktop.png"
               alt="image-hero-desktop.png"
               className="md:inline hidden w-full"
             />
             <img
-              src="/images/image-hero-mobile.png"
+              src="./images/image-hero-mobile.png"
               alt="image-hero-mobile.png"
               className="w-full inline md:hidden max-h-96"
             />

@@ -13,7 +13,7 @@ const BackingConfirmModal = ({ setBackingConformation, title }) => {
             onClick={() => setBackingConformation(false)}
           >
             <img
-              src="/images/icon-close-modal.svg"
+              src="./images/icon-close-modal.svg"
               alt="icon-close-modal.svg"
               className="w-5"
             />

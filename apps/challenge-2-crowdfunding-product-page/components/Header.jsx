@@ -11,7 +11,7 @@ const Header = () => {
       {/* Foreground content */}
       <div className="relative z-10 flex justify-between items-center max-w-6xl mx-auto h-full py-8 px-4">
         {/* logo */}
-        <img src="/images/logo.svg" alt="logo" className="w-28" />
+        <img src="./images/logo.svg" alt="logo" className="w-28" />
 
         {/* nav menu desktop */}
         <ul className="hidden md:flex gap-8">
@@ -38,7 +38,7 @@ const Header = () => {
           onClick={() => setOpenMenu(!openMenu)}
         >
           <img
-            src={`/images/${
+            src={`./images/${
               openMenu ? "icon-close-menu.svg" : "icon-hamburger.svg"
             }`}
             alt="menu-toggle"
