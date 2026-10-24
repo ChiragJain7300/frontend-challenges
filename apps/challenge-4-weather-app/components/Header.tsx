@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { UnitsI, useWeatherContext } from "./contextProvider/WeatherContextProvider";
+import { asset } from "@/constants";
 
 interface HeaderProps {
   units?: UnitsI;
@@ -69,7 +70,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
       <div className="w-full md:max-w-5xl xl:max-w-6xl mx-auto flex items-center justify-between py-8 px-4">
         <div>
           <Image
-            src="/assets/images/logo.svg"
+            src={asset("/assets/images/logo.svg")}
             alt="Weather Now logo"
             width={200}
             height={100}
@@ -87,14 +88,14 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
             aria-label="Unit preferences"
           >
             <Image
-              src="/assets/images/icon-units.svg"
+              src={asset("/assets/images/icon-units.svg")}
               alt="units-icon"
               width={14}
               height={14}
             />
             <p className="text-white text-xs font-medium">Units</p>
             <Image
-              src="/assets/images/icon-dropdown.svg"
+              src={asset("/assets/images/icon-dropdown.svg")}
               alt="dropdown-icon"
               width={10}
               height={10}
@@ -138,7 +139,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.temp === "C" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}
@@ -161,7 +162,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.temp === "F" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}
@@ -195,7 +196,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.windSpeed === "kmh" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}
@@ -220,7 +221,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.windSpeed === "mph" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}
@@ -254,7 +255,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.precipitation === "mm" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}
@@ -279,7 +280,7 @@ const Header = ({ units: propsUnits }: HeaderProps) => {
                   </span>
                   {units.precipitation === "in" && (
                     <Image
-                      src="/assets/images/icon-checkmark.svg"
+                      src={asset("/assets/images/icon-checkmark.svg")}
                       alt="selected"
                       width={12}
                       height={12}

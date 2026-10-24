@@ -1,5 +1,5 @@
 "use client";
-import { LocationObj } from "@/constants";
+import { LocationObj, asset } from "@/constants";
 import Image from "next/image";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { useWeatherContext } from "./contextProvider/WeatherContextProvider";
@@ -113,7 +113,7 @@ const SearchBar = () => {
       >
         <div className="relative flex-1">
           <Image
-            src="/assets/images/icon-search.svg"
+            src={asset("/assets/images/icon-search.svg")}
             alt="search-icon"
             width={18}
             height={18}
@@ -143,7 +143,7 @@ const SearchBar = () => {
               {loading && (
                 <div className="flex items-center gap-3 bg-Neutral-800 border border-Neutral-600/60 rounded-lg py-3 px-4 shadow-2xl">
                   <Image
-                    src="/assets/images/icon-loading.svg"
+                    src={asset("/assets/images/icon-loading.svg")}
                     alt="loading-img"
                     width={16}
                     height={16}

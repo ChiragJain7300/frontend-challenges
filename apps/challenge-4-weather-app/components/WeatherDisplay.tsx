@@ -1,5 +1,5 @@
 "use client";
-import { LocationObj, weatherComponents, WeatherDataI, WeatherState } from "@/constants";
+import { LocationObj, weatherComponents, WeatherDataI, WeatherState, asset } from "@/constants";
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -59,7 +59,7 @@ export function EmojiDisplay({
   }
 
   return (
-    <Image src={"/assets/images/" + imgLink} fill alt={alt || ""} sizes="" />
+    <Image src={asset("/assets/images/" + imgLink)} fill alt={alt || ""} sizes="" />
   );
 }
 
@@ -181,11 +181,7 @@ const WeatherDisplay = ({
                 <div
                   className="w-full h-full rounded-xl bg-cover bg-center p-4 flex items-center justify-between"
                   style={{
-                    backgroundImage: `url(${
-                      process.env.NODE_ENV === "production"
-                        ? "/frontend-challenges/challenge-4-weather-app"
-                        : ""
-                    }/assets/images/bg-today-large.svg)`,
+                    backgroundImage: `url(${asset("/assets/images/bg-today-large.svg")})`,
                   }}
                 >
                   {" "}
@@ -284,7 +280,7 @@ const WeatherDisplay = ({
               >
                 <p className="text-[10px] md:text-xs font-medium">{activeDay}</p>
                 <Image
-                  src="/assets/images/icon-dropdown.svg"
+                  src={asset("/assets/images/icon-dropdown.svg")}
                   alt="dropdown-icon"
                   width={10}
                   height={10}

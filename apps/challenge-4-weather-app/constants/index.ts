@@ -81,3 +81,8 @@ export const hourlyForecastSample: HourlyForecast[] = Array.from(
     temperature: "",
   }),
 );
+
+export const asset = (path: string): string => {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${base}${path.startsWith("/") ? "" : "/"}${path}`;
+};
