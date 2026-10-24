@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="newsletterCont">
+      <div class="leftPanel">
+        <h1 class="news-head">Stay updated!</h1>
+
+        <p class="news-p">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <div class="list">
+          <div class="li">
+            <img src="./assets/images/icon-list.svg">
+            <p>Product discovery and building what matters</p>
+          </div>
+          
+          <div class="li">
+            <img src="./assets/images/icon-list.svg">
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="li">
+            <img src="./assets/images/icon-list.svg">
+            <p>And much more!</p>
+          </div>
+        </div>
+        <form>
+          <div class="email-input">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="email@company.com" required>
+          </div>
+          
+          <button class="newBtn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+        
+      </div>
+      <div class="rightPanel">
+        <picture>
+          <source media="(min-width:800px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" class="mobileImg">
+        </picture>
+      </div>
+    </div>
+
+    <div class="succCont hidden">
+      <img src="./assets/images/icon-success.svg" class="succImg">
+
+      <h1>Thanks for subscribing!</h1>
+      
+      <p>
+        A confirmation email has been sent to <span class="enteredEmail">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      
+      <button class="newBtn" id="dismissMsg">Dismiss message</button>
+      
+    </div>
+
+  
+  </main>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ChiragJain7300">Chirag Jain</a>.
+  </div>
+
+  <script>
+    const newsForm = document.querySelector(".newsletterCont");
+    const succBox = document.querySelector(".succCont");
+    const enteredEmail = document.querySelector(".enteredEmail");
+    const form = document.querySelector("form");
+    const dismissMsg = document.getElementById("dismissMsg");
+    const email = document.getElementById("email")
+
+    dismissMsg.addEventListener("click", () => {
+      succBox.classList.add("hidden");
+      newsForm.classList.remove("hidden");
+      email.value = "";
+    })
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      enteredEmail.textContent = email.value;
+      newsForm.classList.add("hidden");
+      succBox.classList.remove("hidden");
+    })
+  </script>
+</body>
+</html>
