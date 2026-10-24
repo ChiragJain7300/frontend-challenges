@@ -1,8 +1,10 @@
 {
+  "name": "challenge-11-social-proof",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "servor --reload"
-  },
-  "dependencies": {
-    "servor": "^4.0.2"
+    "dev": "npx -y serve . -l 5173",
+    "build": "mkdir -p dist && cp -R index.html styles.css script.js images social-proof-section-master dist/ 2>/dev/null || true"
   }
 }

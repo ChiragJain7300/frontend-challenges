@@ -14,7 +14,7 @@ const ProdCard = ({ prod, index }) => {
         <div className="mt-auto flex justify-between">
           <span className="text-[#394150]">x {prod.qty}</span>
           <button className="cursor-pointer hover:bg-gray-300 duration-150 hover:text-white rounded-lg p-1">
-            <img src="/resources/close-icon.svg" alt="close-icon.svg" />
+            <img src="./resources/close-icon.svg" alt="close-icon.svg" />
           </button>
         </div>
       </div>

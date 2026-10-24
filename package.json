@@ -15,6 +15,17 @@
     "dev:08": "npm run dev --workspace=challenge-8-ecommerce-product-page",
     "dev:09": "npm run dev --workspace=challenge-9-contact-form",
     "dev:10": "npm run dev --workspace=challenge-10-four-card-feature",
+    "dev:11": "npm run dev --workspace=challenge-11-social-proof",
+    "dev:12": "npm run dev --workspace=challenge-12-mortgage-calculator",
+    "dev:13": "npm run dev --workspace=challenge-13-base-apparel",
+    "dev:14": "npm run dev --workspace=challenge-14-product-list-cart",
+    "dev:15": "npm run dev --workspace=challenge-15-faq-accordion",
+    "dev:16": "npm run dev --workspace=challenge-16-device-shop-checkout",
+    "dev:17": "npm run dev --workspace=challenge-17-ping-coming-soon",
+    "dev:18": "npm run dev --workspace=challenge-18-intro-component-signup",
+    "dev:19": "npm run dev --workspace=challenge-19-newsletter-signup",
+    "dev:20": "npm run dev --workspace=challenge-20-profile-card",
+    "dev:21": "npm run dev --workspace=challenge-21-huddle-single-section",
     "build": "npm run build --workspaces --if-present"
   }
 }

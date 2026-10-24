@@ -60,7 +60,7 @@ const FoodCard = ({ foodItem = {}, order, setOrder }) => {
             className="border border-white rounded-full px-1 py-2 hover:bg-white"
           >
             <img
-              src="/images/icon-decrement-quantity.svg"
+              src="./images/icon-decrement-quantity.svg"
               alt="icon-decrement-quantity.svg"
             />
           </button>
@@ -70,7 +70,7 @@ const FoodCard = ({ foodItem = {}, order, setOrder }) => {
             className="border border-white rounded-full p-1 hover:bg-white"
           >
             <img
-              src="/images/icon-increment-quantity.svg"
+              src="./images/icon-increment-quantity.svg"
               alt="icon-increment-quantity.svg"
             />
           </button>
@@ -80,7 +80,7 @@ const FoodCard = ({ foodItem = {}, order, setOrder }) => {
           className="rounded-full px-6 py-3 flex bg-white gap-2 justify-center absolute left-16 top-[160px] sm:left-12 sm:top-[220px]"
           onClick={() => addToCart(foodItem.id)}
         >
-          <img src="/images/icon-add-to-cart.svg" alt="icon-add-to-cart" />
+          <img src="./images/icon-add-to-cart.svg" alt="icon-add-to-cart" />
           <span className="text-md font-bold">Add to Cart</span>
         </button>
       )}

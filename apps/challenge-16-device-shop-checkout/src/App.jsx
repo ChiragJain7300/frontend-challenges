@@ -2,21 +2,21 @@ import ProdCard from "./components/ProdCard";
 function App() {
   const ProdData = [
     {
-      src: "/resources/Gold.png",
+      src: "./resources/Gold.png",
       name: "iPhone 12 Pro",
       color: "Golden",
       qty: "1",
       price: "999",
     },
     {
-      src: "/resources/Apple-watch.png",
+      src: "./resources/Apple-watch.png",
       name: "Apple Watch",
       color: "Blue",
       qty: "1",
       price: "399",
     },
     {
-      src: "/resources/iMac.png",
+      src: "./resources/iMac.png",
       name: "iMac",
       color: "Green",
       qty: "1",
@@ -30,7 +30,7 @@ function App() {
         style={{ fontFamily: `"Inter", sans-serif` }}
       >
         <img
-          src="/resources/background-image.png"
+          src="./resources/background-image.png"
           alt="backgroundImg"
           className="w-full h-[230px] absolute top-0 left-0 z-0 object-cover"
         />

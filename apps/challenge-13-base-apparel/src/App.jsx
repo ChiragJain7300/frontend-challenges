@@ -13,11 +13,11 @@ function App() {
       <main className="w-full md:h-screen font-josephin flex">
         <div className="flex flex-col md:justify-around md:items-center xl:items-start xl:ps-32 flex-1 bg-gradient-to-br from-[hsl(0,0%,100%)] to-[hsl(0,100%,98%)] md:py-16 min-w-[420px]">
           <div className="min-w-[350px] md:w-1/2 flex justify-start p-10 md:p-0">
-            <img src="/images/logo.svg" alt="logo" />
+            <img src="./images/logo.svg" alt="logo" />
           </div>
           <div className="block md:hidden w-full">
             <img
-              src="/images/hero-mobile.jpg"
+              src="./images/hero-mobile.jpg"
               alt="hero-mobile.jpg"
               className="w-full min-w-[350px]"
             />
@@ -46,14 +46,14 @@ function App() {
                 placeholder="Email Address"
               />
               <button className="text-center bg-gradient-to-br from-[hsla(0,80%,86%,0.9)] to-[hsla(0,74%,74%,0.9)] w-20 md:w-24 rounded-full flex justify-center items-center -ms-16 hover:shadow-2xl hover:bg-opacity-90">
-                <img src="/images/icon-arrow.svg" alt="icon-arrow.svg" />
+                <img src="./images/icon-arrow.svg" alt="icon-arrow.svg" />
               </button>
             </div>
           </div>
         </div>
         <div className="hidden md:block h-full">
           <img
-            src="/images/hero-desktop.jpg"
+            src="./images/hero-desktop.jpg"
             alt="hero-desktop.jpg"
             className="h-full min-w-[350px]"
           />

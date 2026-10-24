@@ -49,7 +49,7 @@ const Cart = ({ order, setOrder }) => {
                 onClick={() => deleteOrderEntry(item.id)}
               >
                 <img
-                  src="/images/icon-remove-item.svg"
+                  src="./images/icon-remove-item.svg"
                   alt="icon-remove-item"
                 />
               </button>
@@ -63,7 +63,7 @@ const Cart = ({ order, setOrder }) => {
         </div>
         <div className="w-full p-3 bg-Rose-100 flex gap-2 justify-center mb-5">
           <img
-            src="/images/icon-carbon-neutral.svg"
+            src="./images/icon-carbon-neutral.svg"
             alt="icon-carbon-neutral"
             className="w-5"
           />
@@ -83,7 +83,7 @@ const Cart = ({ order, setOrder }) => {
           {/* Modal Compoenent  */}
           <div className="bg-white p-5 rounded-lg flex flex-col w-full md:w-[480px]">
             <img
-              src="/images/icon-order-confirmed.svg"
+              src="./images/icon-order-confirmed.svg"
               alt="icon-order-confirmed"
               className="w-12 mb-5"
             />

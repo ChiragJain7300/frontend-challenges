@@ -28,7 +28,7 @@ function App() {
             {order.length === 0 ? (
               <>
                 <img
-                  src="/images/illustration-empty-cart.svg"
+                  src="./images/illustration-empty-cart.svg"
                   alt="illustration-empty-cart"
                   className="w-64 mx-auto"
                 />
