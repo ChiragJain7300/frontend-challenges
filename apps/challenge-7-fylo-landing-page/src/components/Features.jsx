@@ -5,7 +5,7 @@ const Features = () => {
     <section className="w-full min-h-screen font-body bg-Light-Grayish-Blue">
       <div className="w-full bg-white">
         <img
-          src="/images/bg-curve-desktop.svg"
+          src="./images/bg-curve-desktop.svg"
           alt="bg-curve-desktop"
           className="w-full -z-20"
         />
@@ -35,7 +35,7 @@ const Features = () => {
             See how Fylo works
             <span>
               <img
-                src="/images/icon-arrow.svg"
+                src="./images/icon-arrow.svg"
                 alt="icon-arrow"
                 className="w-5"
               />
@@ -44,7 +44,7 @@ const Features = () => {
 
           <div className="w-[360px] bg-white rounded-lg shadow-2xl p-7">
             <img
-              src="/images/icon-quotes.svg"
+              src="./images/icon-quotes.svg"
               alt="icon-quotes.svg"
               className="mb-3"
             />
@@ -56,7 +56,7 @@ const Features = () => {
 
             <div className="flex gap-3">
               <img
-                src="/images/avatar-testimonial.jpg"
+                src="./images/avatar-testimonial.jpg"
                 alt="avatar-testimonial.jpg"
                 className="w-10 rounded-full"
               />
@@ -75,7 +75,7 @@ const Features = () => {
         {/* right img */}
         <div className="w-full sm:w-2/3 md:w-1/2">
           <img
-            src="/images/illustration-2.svg"
+            src="./images/illustration-2.svg"
             alt="illustration-2"
             className="w-full"
           />

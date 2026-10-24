@@ -35,18 +35,18 @@ const Footer = () => {
           {/* bottom section */}
           <div>
             <img
-              src="/images/logo-white.svg"
+              src="./images/logo-white.svg"
               alt="logo-white.svg"
               className="w-[175px] mb-5"
             />
             <div className="flex md:flex-row flex-col justify-between gap-10 ">
               <div>
                 <div className="flex gap-3 items-center mb-3">
-                  <img src="/images/icon-phone.svg" alt="icon-phone" />
+                  <img src="./images/icon-phone.svg" alt="icon-phone" />
                   <span>Phone: +1-543-123-4567</span>
                 </div>
                 <div className="flex gap-3 items-center mb-3">
-                  <img src="/images/icon-email.svg" alt="icon-email" />
+                  <img src="./images/icon-email.svg" alt="icon-email" />
                   <span>chiragjain7300@gmail.com</span>
                 </div>
               </div>
@@ -79,21 +79,21 @@ const Footer = () => {
               <div className="flex gap-3 items-start justify-center md:justify-start w-full md:w-auto">
                 <button>
                   <img
-                    src="/images/icon-facebook-f.svg"
+                    src="./images/icon-facebook-f.svg"
                     alt="icon-facebook-f"
                     className="w-10 border border-white p-2 rounded-full duration-100 cursor-pointer hover:border-2 hover:border-Bright-Blue"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/icon-twitter.svg"
+                    src="./images/icon-twitter.svg"
                     alt="icon-twitter"
                     className="w-10 border border-white p-2 rounded-full duration-100 cursor-pointer hover:border-2 hover:border-Bright-Blue"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/icon-instagram.svg"
+                    src="./images/icon-instagram.svg"
                     alt="icon-instagram"
                     className="w-10 border border-white p-2 rounded-full duration-100 cursor-pointer hover:border-2 hover:border-Bright-Blue"
                   />

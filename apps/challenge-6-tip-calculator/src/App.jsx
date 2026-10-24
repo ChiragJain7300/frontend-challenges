@@ -233,7 +233,7 @@ function App() {
   return (
     <main className="w-full min-h-screen bg-Light-grayish-cyan flex flex-col items-center font-primary justify-evenly py-8">
       <div>
-        <img src="/images/logo.svg" alt="logo.svg" />
+        <img src="./images/logo.svg" alt="logo.svg" />
       </div>
 
       {/* Tip Calculator Container */}
@@ -246,7 +246,7 @@ function App() {
               amt={billAmt}
               setAmt={setBillAmt}
               label="Bill"
-              icon="/images/icon-dollar.svg"
+              icon="./images/icon-dollar.svg"
               error={error.bill}
             />
 
@@ -291,7 +291,7 @@ function App() {
               amt={people}
               setAmt={setPeople}
               label="Number of people"
-              icon="/images/icon-person.svg"
+              icon="./images/icon-person.svg"
               error={error.people}
             />
           </form>

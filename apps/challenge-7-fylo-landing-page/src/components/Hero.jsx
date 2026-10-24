@@ -29,7 +29,7 @@ const Hero = () => {
         {/* right Image */}
         <div className="sm:w-2/3 md:w-[60%] lg:w-1/2">
           <img
-            src="/images/illustration-1.svg"
+            src="./images/illustration-1.svg"
             alt="illustration-1.svg"
             className="w-full md:w-auto"
           />

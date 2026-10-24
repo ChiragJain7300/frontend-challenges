@@ -7,7 +7,7 @@ const Header = ({ order, setCart }) => {
         <div className="w-2/3 h-full bg-white p-10">
           <button className="mb-14">
             <img
-              src="/images/icon-close.svg"
+              src="./images/icon-close.svg"
               alt="icon-close.svg"
               className="w-5"
               onClick={() => setShowMenu((prev) => !prev)}
@@ -15,7 +15,7 @@ const Header = ({ order, setCart }) => {
           </button>
           <ul className="flex flex-col gap-5">
             {navLinks.map((link) => (
-              <li className="hover:font-extrabold text-lg text-dgBlue font-semibold cursor-pointer duration-100">
+              <li key={link} className="hover:font-extrabold text-lg text-dgBlue font-semibold cursor-pointer duration-100">
                 {link}
               </li>
             ))}
@@ -36,18 +36,18 @@ const Header = ({ order, setCart }) => {
             onClick={() => setShowMenu((prev) => !prev)}
           >
             <img
-              src="/images/icon-menu.svg"
+              src="./images/icon-menu.svg"
               alt="icon-menu.svg"
               className="min-w-[20px]"
             />
           </button>
           {/* small screen menu */}
           {showMenu ? <SmallNav /> : null}
-          <img src="/images/logo.svg" alt="logo.svg" className="w-[150px]" />
+          <img src="./images/logo.svg" alt="logo.svg" className="w-[150px]" />
         </div>
         <ul className="hidden md:flex md:justify-between lg:justify-start lg:gap-10 flex-1">
           {navLinks.map((link) => (
-            <li className="py-10 hover:border-b-4 hover:border-b-Orange text-md text-gBlue font-semibold cursor-pointer duration-100 z-50">
+            <li key={link} className="py-10 hover:border-b-4 hover:border-b-Orange text-md text-gBlue font-semibold cursor-pointer duration-100 z-50">
               {link}
             </li>
           ))}
@@ -61,7 +61,7 @@ const Header = ({ order, setCart }) => {
             {order.qty}
           </div>
           <img
-            src="/images/icon-cart.svg"
+            src="./images/icon-cart.svg"
             alt="icon-cart.svg"
             className="w-6"
           />
@@ -74,7 +74,7 @@ const Header = ({ order, setCart }) => {
                 <div className="flex-1 p-5">
                   <div className="flex w-full items-center justify-between mb-3">
                     <img
-                      src="/images/image-product-1-thumbnail.jpg"
+                      src="./images/image-product-1-thumbnail.jpg"
                       alt="image-product-1-thumbnail.jpg"
                       className="w-14 rounded-md"
                     />
@@ -96,7 +96,7 @@ const Header = ({ order, setCart }) => {
                     <div>
                       <button onClick={() => setCart({ ...order, qty: 0 })}>
                         <img
-                          src="/images/icon-delete.svg"
+                          src="./images/icon-delete.svg"
                           alt="icon-delete.svg"
                           className="w-4"
                         />
@@ -117,7 +117,7 @@ const Header = ({ order, setCart }) => {
         </div>
         <div>
           <img
-            src="/images/image-avatar.png"
+            src="./images/image-avatar.png"
             alt="image-avatar.png"
             className="w-12 hover:border-2 hover:border-Orange duration-100 cursor-pointer rounded-full"
           />

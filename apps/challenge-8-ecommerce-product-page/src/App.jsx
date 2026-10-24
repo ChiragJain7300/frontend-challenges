@@ -18,7 +18,7 @@ function App() {
             {/* Img display section */}
             <div>
               <img
-                src={`/images/image-product-${currMainImg}.jpg`}
+                src={`./images/image-product-${currMainImg}.jpg`}
                 alt={`image-product-${currMainImg}.jpg`}
                 className="w-96 rounded-xl cursor-pointer"
                 onClick={() => setImgModal((prev) => !prev)}
@@ -26,9 +26,9 @@ function App() {
             </div>
             <div className="flex w-96 justify-between">
               {[1, 2, 3, 4].map((item) => (
-                <div>
+                <div key={item}>
                   <img
-                    src={`/images/image-product-${item}-thumbnail.jpg`}
+                    src={`./images/image-product-${item}-thumbnail.jpg`}
                     alt={`image-product-${item}-thumbnail.jpg`}
                     className={`w-[85px] rounded-xl hover:opacity-45 cursor-pointer ${
                       currMainImg === item
@@ -44,7 +44,7 @@ function App() {
           {/* mobile view img toggle */}
           <div className="md:hidden w-2/3 min-w-[375px] mx-auto relative mb-6">
             <img
-              src={`/images/image-product-${currMainImg}.jpg`}
+              src={`./images/image-product-${currMainImg}.jpg`}
               alt={`image-product-${currMainImg}.jpg`}
               className="w-full"
             />
@@ -57,7 +57,7 @@ function App() {
               }
             >
               <img
-                src="/images/icon-previous.svg"
+                src="./images/icon-previous.svg"
                 alt="icon-previous.svg"
                 className="w-3"
               />
@@ -71,7 +71,7 @@ function App() {
               }
             >
               <img
-                src="/images/icon-next.svg"
+                src="./images/icon-next.svg"
                 alt="icon-next.svg"
                 className="w-3"
               />
@@ -113,7 +113,7 @@ function App() {
                   }
                 >
                   <img
-                    src="/images/icon-minus.svg"
+                    src="./images/icon-minus.svg"
                     alt="icon-minus.svg"
                     className="w-3"
                   />
@@ -123,7 +123,7 @@ function App() {
                 </span>
                 <button onClick={() => setShoeOrdCount((prev) => prev + 1)}>
                   <img
-                    src="/images/icon-plus.svg"
+                    src="./images/icon-plus.svg"
                     alt="icon-plus.svg"
                     className="w-3"
                   />
@@ -138,7 +138,7 @@ function App() {
                 }
               >
                 <img
-                  src="/images/icon-cart.svg"
+                  src="./images/icon-cart.svg"
                   alt="icon-cart.svg"
                   className="w-5 text-vdBlue"
                 />
@@ -151,7 +151,7 @@ function App() {
           <div className="w-full h-screen fixed bg-opacity-70 bg-black flex flex-col gap-5 items-center justify-center z-50 top-0 left-0">
             <div className="w-96 relative">
               <img
-                src="/images/icon-close.svg"
+                src="./images/icon-close.svg"
                 alt="icon-close.svg"
                 className="w-5 ms-auto cursor-pointer"
                 onClick={() => setImgModal((prev) => !prev)}
@@ -165,7 +165,7 @@ function App() {
                 }
               >
                 <img
-                  src="/images/icon-previous.svg"
+                  src="./images/icon-previous.svg"
                   alt="icon-previous.svg"
                   className="w-3"
                 />
@@ -179,7 +179,7 @@ function App() {
                 }
               >
                 <img
-                  src="/images/icon-next.svg"
+                  src="./images/icon-next.svg"
                   alt="icon-next.svg"
                   className="w-3"
                 />
@@ -187,7 +187,7 @@ function App() {
             </div>
             <div>
               <img
-                src={`/images/image-product-${currModalImg}.jpg`}
+                src={`./images/image-product-${currModalImg}.jpg`}
                 alt={`image-product-${currModalImg}.jpg`}
                 className="w-96 rounded-xl cursor-pointer"
                 onClick={() => setImgModal((prev) => !prev)}
@@ -195,9 +195,9 @@ function App() {
             </div>
             <div className="flex w-96 justify-between">
               {[1, 2, 3, 4].map((item) => (
-                <div>
+                <div key={item}>
                   <img
-                    src={`/images/image-product-${item}-thumbnail.jpg`}
+                    src={`./images/image-product-${item}-thumbnail.jpg`}
                     alt={`image-product-${item}-thumbnail.jpg`}
                     className={`w-[85px] rounded-xl hover:opacity-45 cursor-pointer ${
                       currModalImg === item

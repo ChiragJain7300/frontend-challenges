@@ -9,6 +9,12 @@
     "dev:02": "npm run dev --workspace=challenge-2-crowdfunding-product-page",
     "dev:03": "npm run dev --workspace=challenge-3-intro-section",
     "dev:04": "npm run dev --workspace=challenge-4-weather-app",
+    "dev:05": "npm run dev --workspace=challenge-5-notifications-page",
+    "dev:06": "npm run dev --workspace=challenge-6-tip-calculator",
+    "dev:07": "npm run dev --workspace=challenge-7-fylo-landing-page",
+    "dev:08": "npm run dev --workspace=challenge-8-ecommerce-product-page",
+    "dev:09": "npm run dev --workspace=challenge-9-contact-form",
+    "dev:10": "npm run dev --workspace=challenge-10-four-card-feature",
     "build": "npm run build --workspaces --if-present"
   }
 }

@@ -1,18 +1,7 @@
 export const notificationList = [
-  // {
-  //   img: "/images/",
-  //   incAccName: "",
-  //   groupName: "",
-  //   message: "",
-  //   isRead: false,
-  //   postName: "",
-  //   postImg: "",
-  //   postInfo: "",
-  //   postTime: "",
-  // },
   {
     id: "1",
-    img: "/images/avatar-mark-webber.webp",
+    img: "./images/avatar-mark-webber.webp",
     incAccName: "mark webber",
     isRead: false,
     postInfo: "reacted to your recent post",
@@ -21,7 +10,7 @@ export const notificationList = [
   },
   {
     id: "2",
-    img: "/images/avatar-angela-gray.webp",
+    img: "./images/avatar-angela-gray.webp",
     incAccName: "angela grey",
     isRead: false,
     postInfo: "followed you",
@@ -29,7 +18,7 @@ export const notificationList = [
   },
   {
     id: "3",
-    img: "/images/avatar-jacob-thompson.webp",
+    img: "./images/avatar-jacob-thompson.webp",
     incAccName: "jacob thompson",
     groupName: "Chess Club",
     isRead: false,
@@ -38,7 +27,7 @@ export const notificationList = [
   },
   {
     id: "4",
-    img: "/images/avatar-rizky-hasanuddin.webp",
+    img: "./images/avatar-rizky-hasanuddin.webp",
     incAccName: "rizky hasanuddin",
     message:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
@@ -48,16 +37,16 @@ export const notificationList = [
   },
   {
     id: "5",
-    img: "/images/avatar-kimberly-smith.webp",
+    img: "./images/avatar-kimberly-smith.webp",
     incAccName: "kimberly smith",
     isRead: true,
-    postImg: "/images/image-chess.webp",
+    postImg: "./images/image-chess.webp",
     postInfo: "commented on your picture",
     postTime: "1 week ago",
   },
   {
     id: "6",
-    img: "/images/avatar-nathan-peterson.webp",
+    img: "./images/avatar-nathan-peterson.webp",
     incAccName: "nathan peterson",
     isRead: true,
     postName: "5 end-game strategies to increase your win rate",
@@ -66,7 +55,7 @@ export const notificationList = [
   },
   {
     id: "7",
-    img: "/images/avatar-anna-kim.webp",
+    img: "./images/avatar-anna-kim.webp",
     incAccName: "anna kim",
     isRead: true,
     groupName: "Chess Club",
