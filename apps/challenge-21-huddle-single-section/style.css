@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+* {
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--violet) url("./images/bg-desktop.svg");
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+}
+.logo {
+  margin-bottom: 2rem;
+}
+.heroCont {
+  display: flex;
+  box-sizing: border-box;
+  gap: 15px;
+}
+.leftPanel {
+  width: 50%;
+}
+.leftPanel img {
+  width: 100%;
+  min-height: 300px;
+}
+.rightPanel {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.right-head1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2vw;
+  line-height: 1.3;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.right-p {
+  color: rgba(255, 255, 255, 0.821);
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.rightPanel button {
+  width: 30%;
+  padding: 0.8rem;
+  border-radius: 5rem;
+  color: var(--violet);
+  font-weight: 600;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  min-width: 150px;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+i {
+  color: white;
+}
+.soItemCont {
+  border: 1px solid white;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 9px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    height: auto;
+    min-height: 100vh;
+    background: var(--violet) url("./images/bg-mobile.svg") no-repeat top center;
+    padding: 5vw;
+  }
+  .heroCont {
+    flex-direction: column;
+  }
+  .rightPanel,
+  .leftPanel {
+    width: 100%;
+  }
+  .rightPanel {
+    align-items: center;
+  }
+  .socials {
+    justify-content: center;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
