@@ -178,7 +178,16 @@ const WeatherDisplay = ({
           <div className="flex flex-col gap-3 mb-5">
             <div className="flex w-full min-h-48 bg-Neutral-700 rounded-xl">
               {data?.currentTemp !== undefined ? (
-                <div className="w-full h-full bg-[url('/assets/images/bg-today-large.svg')] rounded-xl bg-cover bg-center p-4 flex items-center justify-between">
+                <div
+                  className="w-full h-full rounded-xl bg-cover bg-center p-4 flex items-center justify-between"
+                  style={{
+                    backgroundImage: `url(${
+                      process.env.NODE_ENV === "production"
+                        ? "/frontend-challenges/challenge-4-weather-app"
+                        : ""
+                    }/assets/images/bg-today-large.svg)`,
+                  }}
+                >
                   {" "}
                   <div>
                     <h1 className="text-2xl font-bold">

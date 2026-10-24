@@ -8,6 +8,7 @@
     "dev:01": "npm run dev --workspace=challenge-1-hotel-booking",
     "dev:02": "npm run dev --workspace=challenge-2-crowdfunding-product-page",
     "dev:03": "npm run dev --workspace=challenge-3-intro-section",
+    "dev:04": "npm run dev --workspace=challenge-4-weather-app",
     "build": "npm run build --workspaces --if-present"
   }
 }

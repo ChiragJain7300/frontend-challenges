@@ -50,6 +50,10 @@ jobs:
               app_name=$(basename "$app_dir")
               mkdir -p "dist/$app_name"
               cp -R "$app_dir/dist/." "dist/$app_name/"
+            elif [ -d "$app_dir/out" ]; then
+              app_name=$(basename "$app_dir")
+              mkdir -p "dist/$app_name"
+              cp -R "$app_dir/out/." "dist/$app_name/"
             fi
           done
 
