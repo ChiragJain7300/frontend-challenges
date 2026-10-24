@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.homePage {
+  width: 100vw;
+  background-color: lightcyan;
+  min-height: 100vh;
+  display: flex;
+  
+}
+.photoCard {
+  display: flex;
+  width: 350px;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  flex-direction: column;
+  position: relative;
+}
+.imgCont {
+  width: 100%;
+}
+.imgCont img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.authImg {
+  width: 80px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.authImg img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.textPart {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.age {
+  font-size: 24px;
+  font-weight: normal;
+  color: hsl(227, 10%, 46%);
+}
+.city {
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+  margin-top: 10px;
+}
+.seperator {
+  width: 100%;
+  border-top: 1px solid rgba(192, 201, 235);
+  margin: 20px auto;
+}
+.stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  column-gap: 15px;
+  margin-bottom: 20px;
+}
+.statIndi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text1 {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
