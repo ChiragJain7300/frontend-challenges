@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  border: 0;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroCont {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.upper-left {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+.left-head {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--very-dark-magenta);
+}
+.leftText {
+  color: var(--dark-grayish-magenta);
+  font-size: 1.2rem;
+}
+.upper-right {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 480px;
+}
+.ladder-cont {
+  padding: 15px 25px;
+  width: 450px;
+  text-align: center;
+  background-color: var(--light-grayish-magenta);
+  margin-bottom: 10px;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  display: flex;
+  align-items: end;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+.stars {
+  margin-right: 30px;
+}
+.first {
+  margin-right: 80px;
+  align-items: flex-start;
+}
+.third {
+  align-self: flex-end;
+}
+.second {
+  align-self: center;
+}
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+.cardCont {
+  box-sizing: border-box;
+  /* min-width: 300px; */
+  width: 31%;
+  background-color: var(--very-dark-magenta);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 200px;
+}
+.cardHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cardHead img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.authPosition {
+  margin-top: 4px;
+  color: var(--soft-pink);
+  font-weight: 600;
+}
+.reviewCont {
+  line-height: 1.2;
+}
+.lower-first {
+  align-self: flex-start;
+}
+.lower-second {
+  align-self: flex-start;
+  margin-top: 30px;
+}
+.lower-third {
+  align-self: flex-end;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 920px) {
+  .upper-left h1 {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .upper-left p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+  .heroCont {
+    margin: 25px auto;
+    width: 400px;
+    box-sizing: border-box;
+  }
+  .upper {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .upper-left,
+  .upper-right {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+  }
+  .upper-right{
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .first,
+  .second,
+  .third {
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .lower {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .lower-second, .lower-third{
+    margin: auto;
+  }
+  .cardCont {
+    width: 100%;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
